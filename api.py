@@ -6,7 +6,7 @@ model=pickle.load(open('model2.pkl','rb'))
 
 app=Flask(__name__)
 
-@app.route('/',method=['GET'])
+@app.route('/',methods=['GET'])
 def index():
   return "Hello"
 
